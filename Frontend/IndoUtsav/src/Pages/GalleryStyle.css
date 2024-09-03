@@ -1,0 +1,35 @@
+section{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(39, 39, 39);
+}
+
+.seasons{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.tiltcard{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.GalleryHead{
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: rgb(216, 216, 0);
+}

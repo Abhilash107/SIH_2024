@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+
+.Hero1 {
+    height: 45vh;
+    width: 100%;
+    background: rgb(68, 68, 68);
+    background: radial-gradient(circle, rgb(53, 52, 52) 10%, rgb(16, 17, 16) 50%, rgba(0, 0, 0, 1) 90%);
+    color: aliceblue;
+    text-align: center;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Images/backgroundSection.png');
+    background-size: contain;
+    opacity: 0.07;
+}
+
+.backLogo {
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+    width: 100%;
+}
+
+.Logo {
+    height: 100%;
+}
+
+.Hero2 {
+    height: 45vh;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(90, 90, 90, 0.363);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('https://img.freepik.com/free-photo/black-plain-concrete-textured-background_53876-160644.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725062400&semt=ais_hybrid');
+    background-blend-mode: multiply;
+}
+
+.caption h2 {
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: aliceblue;
+}
+
+.btn1 {
+    background-color: #000000;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn1:hover {
+    box-shadow: 0 10px 10px rgb(148, 148, 2);
+    transform: translate(0, -10%);
+}
+
+.b1 {
+    color: yellow;
+}
+
+.b2 {
+    color: rgb(255, 255, 255);
+}
+
+.Hero3 {
+    background-color: black;
+    color: yellow;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Hero3 h2 {
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.Hero3 h4 {
+    text-align: center;
+}
+
+.ticker {
+    width: 80%;
+    height: 20vh;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 30px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    box-shadow: 0 0 20px gray inset;
+    overflow: hidden;
+}
+
+.fest {
+    width: 200vw;
+    display: flex;
+    gap: 100px;
+    animation: ticker 20s linear infinite;
+  }
+
+  .ticker:hover .fest {
+    animation-play-state:paused;
+  }
+  
+  @keyframes ticker {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+.Hero4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(168, 168, 11);
+    color: black;
+    height: 40vh;
+    gap: 20px;
+}
+
+.Hero4 h2 {
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.Hero4 .question {
+    font-weight: 600;
+}
+
+.Hero5 h2{
+    font-family: "Glass Antiqua", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 2px;    
+}
+
+.Hero5 p{
+    width: 500px;
+    word-wrap:break-word;
+    text-align: justify;
+    font-size: 18px;
+    font-family:serif;
+}
+
+.Hero5 .bt{
+    display: flex;
+    gap: 40px;
+}
+
+.Hero5{
+    height: 40vh;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-bottom: 1px solid aliceblue;
+    position: relative;
+}
+
+.Hero5::before, .Hero5::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-image: url('../Images/decoration.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    filter: invert();
+}
+
+.Hero5::before {
+    left: 0;
+}
+
+.Hero5::after {
+    right: 0;
+}
+
+.btn {
+    padding: 10px;
+    border: 1px solid yellow;
+    border-radius: 10px;
+    background-color: transparent;
+    color: yellow;
+    transition: all .5s ease;
+}
+
+.bt1:hover , .bt2:hover{
+    background-color: yellow;
+    color: #000000;
+}
+

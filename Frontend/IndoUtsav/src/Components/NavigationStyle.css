@@ -1,0 +1,88 @@
+.theme-toggle {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #444;
+}
+
+.nav-bar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(15, 7, 7);
+  background: radial-gradient(circle, rgba(68,68,68,1) 10%, rgba(19,21,28,1) 50%, rgba(0,0,0,1) 90%);  
+  color: #fff;
+  padding: .1em;
+  font-family: monospace;
+  font-size: 14px;
+  border-bottom: 1px solid aliceblue;
+}
+
+.logo-container {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logo {
+  max-width: 100%; 
+  height: auto;
+  margin: 0 auto; 
+}
+
+.logo img{
+  border-radius: 50%;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  position: relative;
+  transition: all 0.5s ease; 
+}
+
+.nav-links li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px; 
+  background-color: #e0d03d; 
+  transition: width 0.3s ease; 
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+.nav-links a {
+  color: #fff;
+  transition: color 0.5s ease; 
+}
+
+.nav-links a:hover {
+  color: #e0d03d;
+}
+

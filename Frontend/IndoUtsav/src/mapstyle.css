@@ -1,0 +1,27 @@
+#layer-switcher {
+  position: absolute;
+  bottom: 20px;
+  left: 474px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+#layer-switcher button.basemap-button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+#layer-switcher button.basemap-button.active {
+  background-color: #0056b3;
+}
